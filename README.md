@@ -24,6 +24,8 @@ streamlit run app.py
 
 Open the address printed by Streamlit, normally `http://localhost:8501`.
 
+If you need your own dataset for training model, you can use pdf_text_extractor preprocessing file which gives you a well crafted ready to use dataset in processed_data folder. Otherwise use the already available dataset with a huge corpus of 830K words.
+
 ## Train the model
 
 The default command uses `processed_data/X.npy`, `processed_data/y.npy`, and `processed_data/word_index.json`. It writes the trained model to `artifacts/next_word_model.pt`.
@@ -41,6 +43,7 @@ python train_model.py --epochs 20 --embedding-dim 256 --hidden-dim 512 --num-lay
 When using `processed_data/X.npy`, its existing sequence width determines the context size. Recreate those arrays from the larger corpus to use a longer context window.
 
 To train from a supported CSV, TXT, JSON, or pickle file instead:
+
 
 ```powershell
 python train_model.py --data "your_preprocessed_file.csv" --epochs 10
