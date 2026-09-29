@@ -1,0 +1,9 @@
+.git
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.streamlit/
+.pytest_cache/
+.mypy_cache/
+*.ipynb
