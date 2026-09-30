@@ -4,3 +4,6 @@ streamlit==1.64.0
 torch==2.14.0
 pymupdf 
 tensorflow 
+streamlit==1.64.0
+torch==2.14.0
+numpy==2.4.6
