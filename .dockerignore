@@ -8,11 +8,8 @@ venv/
 .streamlit/
 .pytest_cache/
 .mypy_cache/
-# Jupyter notebooks (not needed at runtime)
 *.ipynb
-# Training-only data (not needed at runtime)
 processed_data/
 books/
-# Training script (optional to keep image minimal)
 train_model.py
 data_loader.py

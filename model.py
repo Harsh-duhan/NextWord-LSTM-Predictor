@@ -1,5 +1,4 @@
-"""Small LSTM model and helper functions for next-word prediction."""
-
+ 
 from collections import Counter
 import re
 

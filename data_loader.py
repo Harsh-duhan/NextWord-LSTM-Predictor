@@ -1,4 +1,3 @@
-"""Read a preprocessed text dataset from common beginner-friendly formats."""
 
 import json
 import pickle

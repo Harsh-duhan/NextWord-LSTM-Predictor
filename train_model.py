@@ -1,5 +1,3 @@
-"""Train a small PyTorch LSTM model for next-word prediction."""
-
 import argparse
 import json
 from pathlib import Path

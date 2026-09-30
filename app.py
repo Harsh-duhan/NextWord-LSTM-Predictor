@@ -1,5 +1,4 @@
-"""Streamlit interface for the student LSTM next-word prediction project."""
-
+ 
 from pathlib import Path
 
 import streamlit as st
@@ -62,7 +61,7 @@ with st.sidebar:
         step=0.1,
     )
 
-sentence = st.text_area("Enter a sentence", value="machine learning is", height=150)
+sentence = st.text_area("Enter a word", value="Hey there", height=150)
 
 if st.button("Predict next word", type="primary"):
     if not tokenize(sentence):
