@@ -51,19 +51,32 @@ python train_model.py --data "your_preprocessed_file.csv" --epochs 10
 
 ## Run with Docker
 
-Build the image from the project folder:
+### Pull from Docker Hub (recommended)
+
+The image is published to Docker Hub as `harshduhan/nextword-lstm-predictor`:
 
 ```powershell
-docker build -t lstm-next-word-predictor .
-```
-
-Start the app and expose Streamlit on port 8501:
-
-```powershell
-docker run --rm -p 8501:8501 lstm-next-word-predictor
+docker pull harshduhan/nextword-lstm-predictor:latest
+docker run --rm -p 8501:8501 harshduhan/nextword-lstm-predictor:latest
 ```
 
 Then open `http://localhost:8501`.
+
+### Build locally
+
+Build the image from the project folder and tag it to match the Hub name:
+
+```powershell
+docker build -t harshduhan/nextword-lstm-predictor:latest .
+docker run --rm -p 8501:8501 harshduhan/nextword-lstm-predictor:latest
+```
+
+### Push to Docker Hub
+
+```powershell
+docker login
+docker push harshduhan/nextword-lstm-predictor:latest
+```
 
 ## Project layout
 

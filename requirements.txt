@@ -1,9 +1,5 @@
-numpy==2.4.6
-pandas==3.0.6
-streamlit==1.64.0
-torch==2.14.0
-pymupdf 
-tensorflow 
-streamlit==1.64.0
-torch==2.14.0
-numpy==2.4.6
+numpy==1.26.4
+pandas==2.2.0
+streamlit==1.32.0
+pymupdf==1.24.11
+torch==2.1.2
